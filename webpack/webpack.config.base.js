@@ -42,7 +42,7 @@ module.exports = {
         hints: false,
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
         modules: ['node_modules'],
         alias: {
             '@': path.resolve(paths.appSrc),

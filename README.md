@@ -19,7 +19,8 @@ import Component from '@/Component/Component';
 1. React
 2. Redux
 3. Redus-Saga
-4. Sass (CSS Modules)
+4. Sass (Global Styles)
+5. axios
 
 ## Detail
 

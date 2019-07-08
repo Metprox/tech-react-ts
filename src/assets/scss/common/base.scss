@@ -20,6 +20,9 @@ body {
   font-weight: var(--medium);
 }
 
+#app {
+  height: 100%;
+}
 
 @media screen and (min-width: 1441px) {
   .container {

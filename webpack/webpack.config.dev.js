@@ -40,11 +40,14 @@ module.exports = merge(base, {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
                 include: path.resolve(paths.appSrc),
                 use: [
                     {
                         loader: 'babel-loader',
+                    },
+                    {
+                        loader: 'ts-loader',
                     },
                 ],
             },
@@ -58,7 +61,7 @@ module.exports = merge(base, {
                     {
                         loader: 'css-loader',
                         options: {
-                            modules: true,
+                            modules: false,
                             localIdentName: '[name]__[local]___[hash:base64:5]',
                         },
                     },

@@ -64,7 +64,7 @@ module.exports = merge(base, {
                         loader: 'css-loader',
                         options: {
                             sourceMap: false,
-                            modules: true,
+                            modules: false,
                             localIdentName: '[name]__[local]___[hash:base64:5]',
                         },
                     },
@@ -73,6 +73,9 @@ module.exports = merge(base, {
                     },
                     {
                         loader: 'sass-loader',
+                    },
+                    {
+                        loader: 'typed-css-modules-loader',
                     },
                 ],
             },
